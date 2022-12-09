@@ -21,7 +21,7 @@ if($stmt->rowCount()>0){
 		$_SESSION['aid'] = $row['aid'];
 		$_SESSION['admin_id'] = $username;
 		$_SESSION['aname']  = $row['aname'];
-		header("location:admin_dashboard.");
+		header("location:admin_dashboard.php");
 
 	}else{
 		$_SESSION['error'] = "Wrong Password";
